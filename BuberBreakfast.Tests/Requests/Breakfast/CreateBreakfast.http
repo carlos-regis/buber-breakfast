@@ -1,5 +1,4 @@
-@id=f653cfb0-f0ba-4711-9e80-ddb6cba57713
-PUT https://localhost:7080/breakfasts/{{id}}
+POST {{ApiBaseEndpoint}}
 Content-Type: application/json
 
 {

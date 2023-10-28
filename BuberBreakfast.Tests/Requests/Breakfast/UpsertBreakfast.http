@@ -1,8 +1,8 @@
-POST https://localhost:7080/breakfasts
+PUT {{ApiBaseEndpoint}}/{{id}}
 Content-Type: application/json
 
 {
-    "name": "Vegan Sunshine",
+    "name": "Vegan Sunshine 2",
     "description": "Vegan everything! Join us for breakfast!",
     "startDateTime": "2022-04-08T08:00:00",
     "endDateTime": "2022-04-08T11:00:00",
@@ -16,6 +16,3 @@ Content-Type: application/json
         "Cookie"
     ]
 }
-
-###
-GET https://localhost:7080/breakfasts/5cf0da94-0541-422b-ba20-79f43c8a9a25

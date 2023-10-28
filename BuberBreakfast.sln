@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberBreakfast", "BuberBrea
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberBreakfast.Contracts", "BuberBreakfast.Contracts\BuberBreakfast.Contracts.csproj", "{54AF1C82-7E8B-40EB-A4F4-5A60D16D20AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberBreakfast.Tests", "BuberBreakfast.Tests\BuberBreakfast.Tests.csproj", "{FE8561EC-AF3D-43C4-8C4D-A625EA1E887C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{54AF1C82-7E8B-40EB-A4F4-5A60D16D20AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54AF1C82-7E8B-40EB-A4F4-5A60D16D20AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54AF1C82-7E8B-40EB-A4F4-5A60D16D20AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE8561EC-AF3D-43C4-8C4D-A625EA1E887C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8561EC-AF3D-43C4-8C4D-A625EA1E887C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8561EC-AF3D-43C4-8C4D-A625EA1E887C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8561EC-AF3D-43C4-8C4D-A625EA1E887C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
