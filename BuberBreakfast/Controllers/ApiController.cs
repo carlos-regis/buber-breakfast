@@ -2,6 +2,7 @@
 using ErrorOr;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace BuberBreakfast.Controllers;
 
@@ -11,6 +12,23 @@ public class ApiController : ControllerBase
 {
     protected IActionResult Problem(List<Error> errors)
     {
+        if (errors.TrueForAll(_ => _.Type == ErrorType.Validation))
+        {
+            ModelStateDictionary modelStateDictionary = new();
+
+            foreach (Error error in errors)
+            {
+                modelStateDictionary.AddModelError(error.Code, error.Description);
+            }
+
+            return ValidationProblem(modelStateDictionary);
+        }
+
+        if (errors.Exists(_ => _.Type == ErrorType.Unexpected))
+        {
+            return Problem();
+        }
+
         var firstError = errors[0];
 
         var statusCode = firstError.Type switch
